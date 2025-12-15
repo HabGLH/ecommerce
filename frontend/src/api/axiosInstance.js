@@ -2,8 +2,10 @@ import axios from "axios";
 
 let accessToken = null; // In-memory access token
 
+const BASE_URL = import.meta.env.VITE_API_URL || "/api";
+
 const axiosInstance = axios.create({
-  baseURL: "/api", // Relative URL to use Vite proxy
+  baseURL: BASE_URL,
 });
 
 // Function to set the access token
@@ -46,7 +48,7 @@ axiosInstance.interceptors.response.use(
       try {
         // Attempt to refresh the token
         const response = await axios.post(
-          "/api/auth/refresh",
+          `${BASE_URL}/auth/refresh`,
           {},
           { withCredentials: true }
         );
