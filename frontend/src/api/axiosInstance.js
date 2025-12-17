@@ -1,11 +1,10 @@
 import axios from "axios";
+import config from "../config/env.js";
 
 let accessToken = null; // In-memory access token
 
-const BASE_URL = import.meta.env.VITE_API_URL || "/api";
-
 const axiosInstance = axios.create({
-  baseURL: BASE_URL,
+  baseURL: config.API_BASE_URL,
 });
 
 // Function to set the access token
@@ -48,7 +47,7 @@ axiosInstance.interceptors.response.use(
       try {
         // Attempt to refresh the token
         const response = await axios.post(
-          `${BASE_URL}/auth/refresh`,
+          `${config.API_BASE_URL}/auth/refresh`,
           {},
           { withCredentials: true }
         );

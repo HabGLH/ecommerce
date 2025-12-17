@@ -26,11 +26,16 @@ const AuthProvider = ({ children }) => {
       try {
         // Try to get current user (will use refresh token from cookie)
         const userData = await getCurrentUser();
-        // Normalize the role
-        const normalizedUser = {
-          ...userData,
-          role: normalizeRole(userData.role),
-        };
+        // Normalize the role and ensure user data is valid
+        const normalizedUser =
+          userData && typeof userData === "object"
+            ? {
+                ...userData,
+                role: normalizeRole(userData.role),
+                name: userData.name || "User",
+                email: userData.email || "",
+              }
+            : null;
 
         setUser(normalizedUser);
       } catch (error) {
@@ -54,10 +59,16 @@ const AuthProvider = ({ children }) => {
 
   const login = async (credentials) => {
     const data = await apiLogin(credentials);
+    // Ensure user data is valid
+    if (!data?.user) {
+      throw new Error("Invalid login response");
+    }
     // Normalize the role
     const normalizedUser = {
       ...data.user,
       role: normalizeRole(data.user.role),
+      name: data.user.name || "User",
+      email: data.user.email || "",
     };
 
     setAccessToken(data.accessToken);
@@ -67,10 +78,16 @@ const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     const data = await apiRegister(userData);
+    // Ensure user data is valid
+    if (!data?.user) {
+      throw new Error("Invalid register response");
+    }
     // Normalize the role
     const normalizedUser = {
       ...data.user,
       role: normalizeRole(data.user.role),
+      name: data.user.name || "User",
+      email: data.user.email || "",
     };
 
     setAccessToken(data.accessToken);

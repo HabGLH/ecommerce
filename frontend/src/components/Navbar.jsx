@@ -54,8 +54,11 @@ const Navbar = () => {
           // Assuming cart structure has an items array
           // Adjust based on your actual API response structure if needed
           const count =
-            cart.items?.reduce((acc, item) => acc + item.quantity, 0) ||
-            cart.items?.length ||
+            cart?.items?.reduce(
+              (acc, item) => acc + (item?.quantity || 0),
+              0
+            ) ||
+            cart?.items?.length ||
             0;
           setCartCount(count);
         })
@@ -63,6 +66,8 @@ const Navbar = () => {
           console.error("Failed to fetch cart count:", err);
           setCartCount(0);
         });
+    } else {
+      setCartCount(0);
     }
   }, [user]);
 
@@ -231,7 +236,7 @@ const Navbar = () => {
                         : "bg-yellow-400 text-indigo-900"
                     }`}
                   >
-                    {user.name[0].toUpperCase()}
+                    {user?.name?.[0]?.toUpperCase() || "?"}
                   </div>
                   <span
                     className={`font-medium hidden xl:block ${
@@ -240,7 +245,7 @@ const Navbar = () => {
                         : "text-white"
                     }`}
                   >
-                    {user.name.split(" ")[0]}
+                    {user?.name?.split(" ")?.[0] || "User"}
                   </span>
                   <svg
                     className={`w-4 h-4 transition-transform ${
@@ -268,10 +273,10 @@ const Navbar = () => {
                   <div className="absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-700 animate-in fade-in slide-in-from-top-2 duration-200">
                     <div className="px-4 py-3 border-b border-gray-100 dark:border-gray-700">
                       <p className="text-sm font-semibold text-gray-900 dark:text-white">
-                        {user.name}
+                        {user?.name || "User"}
                       </p>
                       <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
-                        {user.email}
+                        {user?.email || ""}
                       </p>
                     </div>
 
