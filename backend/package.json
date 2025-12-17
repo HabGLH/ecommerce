@@ -9,6 +9,9 @@
     "dev": "nodemon server.js",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "keywords": [],
   "author": "Habtamu Genet",
   "license": "ISC",

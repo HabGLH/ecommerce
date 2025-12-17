@@ -1,4 +1,3 @@
-// //product routes.js
 import express from "express";
 import {
   getAllProducts,
@@ -14,15 +13,27 @@ import { roleMiddleware } from "../middleware/roleMiddleware.js";
 
 const router = express.Router();
 
-router.get("/", getAllProducts); // Public Route
-router.get("/admin", authenticateToken, roleMiddleware(), getAdminProducts); // Admin Route
-router.get("/:id", getProductById); // Public Route
+/* =====================
+   PUBLIC ROUTES
+===================== */
+router.get("/", getAllProducts); // GET /api/products
 
-// Admin Routes
+/* =====================
+   ADMIN ROUTES (STATIC FIRST)
+===================== */
+router.get("/admin", authenticateToken, roleMiddleware(), getAdminProducts);
+
 router.post("/", authenticateToken, roleMiddleware(), createProduct);
+
+router.put("/:id/enable", authenticateToken, roleMiddleware(), enableProduct);
+
+/* =====================
+   DYNAMIC ROUTES (LAST)
+===================== */
+router.get("/:id", getProductById);
+
 router.put("/:id", authenticateToken, roleMiddleware(), updateProduct);
 
 router.delete("/:id", authenticateToken, roleMiddleware(), deleteProduct);
-router.put("/:id/enable", authenticateToken, roleMiddleware(), enableProduct);
 
 export default router;
