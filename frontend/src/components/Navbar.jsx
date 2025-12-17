@@ -9,6 +9,11 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
 
+  console.log(
+    "🧭 Navbar render - user:",
+    user ? { name: user.name, email: user.email } : null
+  );
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -236,7 +241,11 @@ const Navbar = () => {
                         : "bg-yellow-400 text-indigo-900"
                     }`}
                   >
-                    {user?.name?.[0]?.toUpperCase() || "?"}
+                    {user?.name &&
+                    typeof user.name === "string" &&
+                    user.name.length > 0
+                      ? user.name[0].toUpperCase()
+                      : "?"}
                   </div>
                   <span
                     className={`font-medium hidden xl:block ${
@@ -245,7 +254,11 @@ const Navbar = () => {
                         : "text-white"
                     }`}
                   >
-                    {user?.name?.split(" ")?.[0] || "User"}
+                    {user?.name &&
+                    typeof user.name === "string" &&
+                    user.name.trim()
+                      ? user.name.split(" ")[0]
+                      : "User"}
                   </span>
                   <svg
                     className={`w-4 h-4 transition-transform ${
@@ -273,10 +286,14 @@ const Navbar = () => {
                   <div className="absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-700 animate-in fade-in slide-in-from-top-2 duration-200">
                     <div className="px-4 py-3 border-b border-gray-100 dark:border-gray-700">
                       <p className="text-sm font-semibold text-gray-900 dark:text-white">
-                        {user?.name || "User"}
+                        {user?.name && typeof user.name === "string"
+                          ? user.name
+                          : "User"}
                       </p>
                       <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
-                        {user?.email || ""}
+                        {user?.email && typeof user.email === "string"
+                          ? user.email
+                          : ""}
                       </p>
                     </div>
 

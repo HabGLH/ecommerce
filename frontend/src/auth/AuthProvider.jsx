@@ -115,6 +115,16 @@ const AuthProvider = ({ children }) => {
   };
 
   // Debug: Log auth state changes
+  useEffect(() => {
+    console.log("🔐 AuthProvider: State update -", {
+      user: user
+        ? { name: user.name, email: user.email, role: user.role }
+        : null,
+      loading,
+      userType: user ? typeof user : "null",
+      nameType: user?.name ? typeof user.name : "undefined",
+    });
+  }, [user, loading]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

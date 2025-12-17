@@ -123,7 +123,11 @@ const AdminLayout = () => {
               </div>
               <div>
                 <h2 className="text-white font-bold text-lg">Admin Panel</h2>
-                <p className="text-white/80 text-xs">{user?.name}</p>
+                <p className="text-white/80 text-xs">
+                  {user?.name && typeof user.name === "string"
+                    ? user.name
+                    : "Admin"}
+                </p>
               </div>
             </div>
           </div>
