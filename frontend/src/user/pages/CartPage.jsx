@@ -193,7 +193,7 @@ const CartPage = () => {
                         <div className="w-32 h-32 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-xl overflow-hidden">
                           {item.product?.images?.[0] ? (
                             <img
-                              src={item.product.images[0]}
+                              src={item.product.images?.[0]}
                               alt={item.product.name}
                               className="w-full h-full object-cover"
                             />
