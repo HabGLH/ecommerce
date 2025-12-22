@@ -1,551 +1,980 @@
-2025-12-17 20:35:01 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
-2025-12-17 20:35:31 [ERROR]: 500 - connect ECONNREFUSED 159.41.88.88:27017 - /api/auth/login - POST - ::ffff:127.0.0.1
-2025-12-17 20:35:31 [ERROR]: MongoServerSelectionError: connect ECONNREFUSED 159.41.88.88:27017
-    at Topology.selectServer (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/sdam/topology.js:346:38)
-    at async tryOperation (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/operations/execute_operation.js:150:18)
-    at async executeOperation (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/operations/execute_operation.js:80:16)
-    at async FindCursor._initialize (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/find_cursor.js:62:26)
-    at async FindCursor.cursorInit (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:620:27)
-    at async FindCursor.fetchBatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:654:13)
-    at async FindCursor.next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:326:17)
-    at async Collection.findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/collection.js:313:24)
-    at async model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2721:15)
-    at async model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:63)
-2025-12-17 20:36:57 [INFO]: Incoming Request: POST /api/auth/register - IP: ::ffff:127.0.0.1
-2025-12-17 20:37:27 [ERROR]: 500 - connect EHOSTUNREACH 159.41.88.88:27017 - /api/auth/register - POST - ::ffff:127.0.0.1
-2025-12-17 20:37:27 [ERROR]: MongoServerSelectionError: connect EHOSTUNREACH 159.41.88.88:27017
-    at Topology.selectServer (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/sdam/topology.js:346:38)
-    at async tryOperation (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/operations/execute_operation.js:150:18)
-    at async executeOperation (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/operations/execute_operation.js:80:16)
-    at async FindCursor._initialize (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/find_cursor.js:62:26)
-    at async FindCursor.cursorInit (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:620:27)
-    at async FindCursor.fetchBatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:654:13)
-    at async FindCursor.next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:326:17)
-    at async Collection.findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/collection.js:313:24)
-    at async model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2721:15)
-    at async model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:63)
-2025-12-17 20:39:14 [INFO]: Incoming Request: POST /api/auth/register - IP: ::ffff:127.0.0.1
-2025-12-17 20:39:36 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 20:39:36 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 20:39:36 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 20:39:39 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 20:39:39 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 20:39:44 [ERROR]: 500 - connect EHOSTUNREACH 159.41.88.88:27017 - /api/auth/register - POST - ::ffff:127.0.0.1
-2025-12-17 20:39:44 [ERROR]: MongoServerSelectionError: connect EHOSTUNREACH 159.41.88.88:27017
-    at Topology.selectServer (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/sdam/topology.js:346:38)
-    at async tryOperation (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/operations/execute_operation.js:150:18)
-    at async executeOperation (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/operations/execute_operation.js:80:16)
-    at async FindCursor._initialize (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/find_cursor.js:62:26)
-    at async FindCursor.cursorInit (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:620:27)
-    at async FindCursor.fetchBatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:654:13)
-    at async FindCursor.next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:326:17)
-    at async Collection.findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongodb/lib/collection.js:313:24)
-    at async model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2721:15)
-    at async model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:63)
-2025-12-17 20:42:32 [INFO]: Incoming Request: POST /api/auth/register - IP: ::ffff:127.0.0.1
-2025-12-17 20:43:29 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
-2025-12-17 20:43:59 [INFO]: Incoming Request: GET /api/orders/my - IP: ::ffff:127.0.0.1
-2025-12-17 20:48:01 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
-2025-12-17 20:49:32 [INFO]: Incoming Request: GET /api/orders/ - IP: ::ffff:127.0.0.1
-2025-12-17 20:49:44 [INFO]: Incoming Request: GET /api/orders/ - IP: ::ffff:127.0.0.1
-2025-12-17 20:51:18 [INFO]: Incoming Request: PUT /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 20:51:18 [ERROR]: 404 - Can't find /api/products on this server! - /api/products - PUT - ::ffff:127.0.0.1
-2025-12-17 20:51:18 [ERROR]: Error: Can't find /api/products on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 20:51:28 [INFO]: Incoming Request: PUT /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 20:51:28 [ERROR]: 404 - Can't find /api/products on this server! - /api/products - PUT - ::ffff:127.0.0.1
-2025-12-17 20:51:28 [ERROR]: Error: Can't find /api/products on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 20:51:38 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 20:51:38 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 20:51:38 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
+2025-12-19 16:51:29 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
+2025-12-19 16:51:46 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 16:56:43 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
+2025-12-19 16:56:43 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
+2025-12-19 16:56:44 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 16:56:44 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 16:56:44 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 16:56:44 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 16:56:44 [ERROR]: 404 - User not found - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-19 16:56:44 [ERROR]: Error: User not found
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:167:11
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 20:51:53 [INFO]: Incoming Request: PUT /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 20:51:53 [ERROR]: 404 - Can't find /api/products/ on this server! - /api/products/ - PUT - ::ffff:127.0.0.1
-2025-12-17 20:51:53 [ERROR]: Error: Can't find /api/products/ on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 20:53:13 [INFO]: Incoming Request: PUT /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 20:53:13 [ERROR]: 400 - Expected property name or '}' in JSON at position 4 (line 2 column 3) - /api/products/ - PUT - ::ffff:127.0.0.1
-2025-12-17 20:53:13 [ERROR]: SyntaxError: Expected property name or '}' in JSON at position 4 (line 2 column 3)
-    at JSON.parse (<anonymous>)
-    at parse (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/body-parser/lib/types/json.js:74:19)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/body-parser/lib/read.js:163:18
-    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
-    at invokeCallback (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/raw-body/index.js:238:16)
-    at done (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/raw-body/index.js:227:7)
-    at IncomingMessage.onEnd (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/raw-body/index.js:287:7)
-    at IncomingMessage.emit (node:events:519:28)
-    at endReadableNT (node:internal/streams/readable:1698:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
-2025-12-17 20:53:34 [INFO]: Incoming Request: PUT /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 20:53:34 [ERROR]: 400 - Expected property name or '}' in JSON at position 4 (line 2 column 3) - /api/products/ - PUT - ::ffff:127.0.0.1
-2025-12-17 20:53:34 [ERROR]: SyntaxError: Expected property name or '}' in JSON at position 4 (line 2 column 3)
-    at JSON.parse (<anonymous>)
-    at parse (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/body-parser/lib/types/json.js:74:19)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/body-parser/lib/read.js:163:18
-    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
-    at invokeCallback (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/raw-body/index.js:238:16)
-    at done (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/raw-body/index.js:227:7)
-    at IncomingMessage.onEnd (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/raw-body/index.js:287:7)
-    at IncomingMessage.emit (node:events:519:28)
-    at endReadableNT (node:internal/streams/readable:1698:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
-2025-12-17 20:54:39 [INFO]: Incoming Request: PUT /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 20:54:39 [ERROR]: 404 - Can't find /api/products/ on this server! - /api/products/ - PUT - ::ffff:127.0.0.1
-2025-12-17 20:54:39 [ERROR]: Error: Can't find /api/products/ on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 20:55:24 [INFO]: Incoming Request: POST /api/auth/register - IP: ::ffff:127.0.0.1
-2025-12-17 20:55:24 [ERROR]: 400 - User already exists - /api/auth/register - POST - ::ffff:127.0.0.1
-2025-12-17 20:55:24 [ERROR]: Error: User already exists
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:37:11
+2025-12-19 16:56:44 [ERROR]: 404 - User not found - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-19 16:56:44 [ERROR]: Error: User not found
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:167:11
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-2025-12-17 20:55:57 [INFO]: Incoming Request: POST /api/auth/register - IP: ::ffff:127.0.0.1
-2025-12-17 20:56:19 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 20:56:19 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 20:56:19 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
+2025-12-19 16:57:29 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
+2025-12-19 16:57:30 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
+2025-12-19 16:57:30 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
+2025-12-19 16:57:30 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
+2025-12-19 16:57:30 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
+2025-12-19 16:57:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 16:57:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 16:59:03 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 16:59:03 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 16:59:03 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 16:59:03 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 16:59:04 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 16:59:04 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 16:59:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 16:59:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:01:19 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:01:20 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:01:20 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:01:20 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-19 17:01:20 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 20:56:46 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 20:56:46 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 20:56:46 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
+2025-12-19 17:01:20 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:01:20 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-19 17:01:20 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 20:56:58 [INFO]: Incoming Request: PUT /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 20:56:58 [ERROR]: 404 - Can't find /api/products/ on this server! - /api/products/ - PUT - ::ffff:127.0.0.1
-2025-12-17 20:56:58 [ERROR]: Error: Can't find /api/products/ on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 20:58:19 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 20:58:19 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 20:58:19 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
+2025-12-19 17:01:27 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
+2025-12-19 17:01:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:01:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:02:29 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:02:29 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:02:29 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:02:29 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:02:29 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-19 17:02:29 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 20:59:04 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 20:59:04 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 20:59:04 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
+2025-12-19 17:02:29 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:02:39 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
+2025-12-19 17:02:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:02:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:03:52 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:03:52 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:03:52 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:03:52 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:03:52 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-19 17:03:52 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 20:59:20 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 20:59:20 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 20:59:20 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
+2025-12-19 17:03:52 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:03:57 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
+2025-12-19 17:03:57 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:03:57 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:04:20 [INFO]: Incoming Request: GET /api/users - IP: ::ffff:127.0.0.1
+2025-12-19 17:04:20 [INFO]: Incoming Request: GET /api/users - IP: ::ffff:127.0.0.1
+2025-12-19 17:04:22 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:04:22 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:05:59 [INFO]: Incoming Request: GET /api/orders?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:05:59 [INFO]: Incoming Request: GET /api/orders?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:01 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:01 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:01 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:01 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:01 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:01 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:01 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:02 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:11 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:12 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:13 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:14 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:15 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:16 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:16 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:16 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:16 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:16 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:16 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:16 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:17 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:17 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:17 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:17 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:17 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:17 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:17 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:17 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:18 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:18 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:18 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:47 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:47 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:47 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:47 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:47 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-19 17:06:47 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 20:59:42 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 20:59:42 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 20:59:42 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
+2025-12-19 17:06:48 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:55 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:55 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:06:55 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:08:01 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:25 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:25 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:33 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:34 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:35 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:36 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:37 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:39 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:09:45 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:03 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:04 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:05 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:06 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:09 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:10 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:19 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:19 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:19 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:19 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:19 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-19 17:10:19 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 21:00:11 [INFO]: Incoming Request: PUT /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:00:11 [ERROR]: 404 - Can't find /api/products on this server! - /api/products - PUT - ::ffff:127.0.0.1
-2025-12-17 21:00:11 [ERROR]: Error: Can't find /api/products on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:02:01 [INFO]: Incoming Request: GET /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:02:09 [INFO]: Incoming Request: PUT /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:02:09 [ERROR]: 404 - Can't find /api/products on this server! - /api/products - PUT - ::ffff:127.0.0.1
-2025-12-17 21:02:09 [ERROR]: Error: Can't find /api/products on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:03:32 [INFO]: Incoming Request: PUT /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:03:32 [ERROR]: 404 - Can't find /api/products on this server! - /api/products - PUT - ::ffff:127.0.0.1
-2025-12-17 21:03:32 [ERROR]: Error: Can't find /api/products on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:04:44 [INFO]: Incoming Request: PUT /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:04:44 [ERROR]: 404 - Can't find /api/products on this server! - /api/products - PUT - ::ffff:127.0.0.1
-2025-12-17 21:04:44 [ERROR]: Error: Can't find /api/products on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:04:56 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:04:56 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 21:04:56 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 21:06:46 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
-2025-12-17 21:07:04 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:07:04 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 21:07:04 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 21:08:31 [INFO]: Incoming Request: GET /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:08:44 [INFO]: Incoming Request: PUT /api/products/6938772bf2970ee0fb3a9f58 - IP: ::ffff:127.0.0.1
-2025-12-17 21:09:06 [INFO]: Incoming Request: PUT /api/products/6938772bf2970ee0fb3a9f58 - IP: ::ffff:127.0.0.1
-2025-12-17 21:09:06 [ERROR]: 404 - Product not found - /api/products/6938772bf2970ee0fb3a9f58 - PUT - ::ffff:127.0.0.1
-2025-12-17 21:09:06 [ERROR]: Error: Product not found
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:80:11
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-2025-12-17 21:09:24 [INFO]: Incoming Request: GET /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:09:34 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:09:34 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 21:09:34 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 21:11:19 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:20 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:20 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:20 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:20 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:28 [INFO]: Incoming Request: GET /api/products?page=1&limit=8&category=featured - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:31 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:31 [INFO]: Incoming Request: GET /api/orders/my - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:31 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:31 [INFO]: Incoming Request: GET /api/orders/my - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:34 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:35 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:36 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:36 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:36 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:36 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:38 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:38 [INFO]: Incoming Request: GET /api/orders/my - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:38 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:38 [INFO]: Incoming Request: GET /api/orders/my - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:43 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:48 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:48 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:50 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:50 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:50 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:51 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:51 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
-2025-12-17 21:11:51 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
-2025-12-17 21:12:17 [INFO]: Incoming Request: POST /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:12:17 [ERROR]: 404 - Can't find /api/products on this server! - /api/products - POST - ::ffff:127.0.0.1
-2025-12-17 21:12:17 [ERROR]: Error: Can't find /api/products on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:14:32 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:14:32 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 21:14:32 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 21:14:56 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:14:56 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 21:14:56 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 21:16:00 [INFO]: Incoming Request: GET /api/products/admin - IP: ::ffff:127.0.0.1
-2025-12-17 21:16:26 [INFO]: Incoming Request: GET /api/products/admin - IP: ::ffff:127.0.0.1
-2025-12-17 21:16:49 [INFO]: Incoming Request: PUT /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:16:49 [ERROR]: 500 - Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product" - /api/products/add - PUT - ::ffff:127.0.0.1
-2025-12-17 21:16:49 [ERROR]: CastError: Cast to ObjectId failed for value "add" (type string) at path "_id" for model "Product"
-    at SchemaObjectId.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schema/objectId.js:253:11)
-    at SchemaType.applySetters (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1280:12)
-    at SchemaType.castForQuery (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/schemaType.js:1706:17)
-    at cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/cast.js:390:32)
-    at Query.cast (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:5016:12)
-    at Query._castConditions (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2380:10)
-    at model.Query._findOne (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:2708:8)
-    at model.Query.exec (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/mongoose/lib/query.js:4627:80)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/productController.js:60:19
-2025-12-17 21:17:10 [INFO]: Incoming Request: PUT /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 21:17:10 [ERROR]: 404 - Can't find /api/products/ on this server! - /api/products/ - PUT - ::ffff:127.0.0.1
-2025-12-17 21:17:10 [ERROR]: Error: Can't find /api/products/ on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:17:27 [INFO]: Incoming Request: PUT /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 21:17:27 [ERROR]: 404 - Can't find /api/products/ on this server! - /api/products/ - PUT - ::ffff:127.0.0.1
-2025-12-17 21:17:27 [ERROR]: Error: Can't find /api/products/ on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:17:43 [INFO]: Incoming Request: POST /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 21:17:59 [INFO]: Incoming Request: POST /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:17:59 [ERROR]: 404 - Can't find /api/products/add on this server! - /api/products/add - POST - ::ffff:127.0.0.1
-2025-12-17 21:17:59 [ERROR]: Error: Can't find /api/products/add on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:18:20 [INFO]: Incoming Request: POST /api/products/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:18:37 [INFO]: Incoming Request: POST /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:18:37 [ERROR]: 404 - Can't find /api/products on this server! - /api/products - POST - ::ffff:127.0.0.1
-2025-12-17 21:18:37 [ERROR]: Error: Can't find /api/products on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:18:58 [INFO]: Incoming Request: POST /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 21:18:58 [ERROR]: 404 - Can't find /api/products/ on this server! - /api/products/ - POST - ::ffff:127.0.0.1
-2025-12-17 21:18:58 [ERROR]: Error: Can't find /api/products/ on this server!
-    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/server.js:40:8
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/route.js:117:3)
-    at handle (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/lib/layer.js:152:17)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:295:15
-    at processParams (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:582:12)
-    at next (/home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:291:5)
-    at /home/habtamu/Documents/Programing/Learn With Project/Full Stack/ecommerce/backend/node_modules/router/index.js:688:15
-2025-12-17 21:19:27 [INFO]: Incoming Request: POST /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 21:19:32 [INFO]: Incoming Request: POST /api/products - IP: ::ffff:127.0.0.1
-2025-12-17 21:19:33 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
-2025-12-17 21:19:54 [INFO]: Incoming Request: PUT /api/products/6942f3c785c92306101d2845 - IP: ::ffff:127.0.0.1
-2025-12-17 21:19:54 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
-2025-12-17 21:19:59 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:00 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:09 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:09 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:11 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:11 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:12 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:12 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:12 [INFO]: Incoming Request: GET /api/users - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:13 [INFO]: Incoming Request: GET /api/users - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:24 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:24 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:24 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:20:24 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:30 [INFO]: Incoming Request: POST /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:43 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:43 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:43 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:43 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:44 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:44 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:45 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:45 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:45 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:24:45 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:41 [INFO]: Incoming Request: POST /api/products/ - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:44 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:44 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:44 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:44 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:44 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:44 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:45 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:46 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:46 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:26:46 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:46 [INFO]: Incoming Request: POST /api/cart/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:49 [INFO]: Incoming Request: POST /api/cart/add - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:57 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:57 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:57 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:57 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:57 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:57 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:59 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:59 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
-2025-12-17 21:27:59 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:28:00 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:28:03 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:28:04 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:28:04 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:28:04 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
-2025-12-17 21:28:07 [INFO]: Incoming Request: POST /api/orders - IP: ::ffff:127.0.0.1
-2025-12-17 21:28:09 [INFO]: Incoming Request: GET /api/orders/my - IP: ::ffff:127.0.0.1
-2025-12-17 21:28:09 [INFO]: Incoming Request: GET /api/orders/my - IP: ::ffff:127.0.0.1
-2025-12-17 21:46:31 [INFO]: Incoming Request: POST /api/products/ - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:19 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:24 [INFO]: Incoming Request: POST /api/auth/login - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:43 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:43 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:44 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:48 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:48 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:49 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:10:49 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:11:40 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:22 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:22 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:23 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:23 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:24 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:25 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:26 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:27 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:28 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:29 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:30 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:31 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:32 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:36 [INFO]: Incoming Request: GET /api/orders?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:36 [INFO]: Incoming Request: GET /api/orders?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:38 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:41 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:41 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-19 17:25:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1

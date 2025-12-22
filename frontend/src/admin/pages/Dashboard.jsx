@@ -2,14 +2,8 @@ import { useState, useEffect } from "react";
 import axiosInstance from "../../api/axiosInstance";
 import Loader from "../../components/Loader";
 import ErrorMessage from "../../components/ErrorMessage";
-
-// Format currency
-const formatPrice = (price) => {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(price);
-};
+import { formatPrice } from "../../utils/formatters";
+import { stats } from "../../api/adminApi";
 
 // Stat Card Component
 const StatCard = ({ title, value, icon, color, subtitle }) => {
@@ -40,19 +34,20 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const fetchStats = async () => {
+    try {
+      const response = await axiosInstance.get("/admin/stats");
+      const data = response.data;
+      setStats(data);
+      console.log(stats);
+    } catch (err) {
+      setError("Failed to load dashboard stats.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
   useEffect(() => {
-    const fetchStats = async () => {
-      try {
-        const response = await axiosInstance.get("/admin/stats");
-        setStats(response.data);
-      } catch (err) {
-        setError("Failed to load dashboard stats.");
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchStats();
   }, []);
 

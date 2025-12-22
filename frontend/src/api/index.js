@@ -12,3 +12,6 @@ export * from "./cartApi";
 
 // Orders
 export * from "./orderApi";
+
+//Admin stats
+export * from "./adminApi";
