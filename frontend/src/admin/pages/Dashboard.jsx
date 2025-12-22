@@ -198,7 +198,8 @@ const Dashboard = () => {
                 Low Stock Alert
               </h2>
               <p className="text-gray-600 dark:text-gray-400">
-                {stats.lowStockProducts.length} product(s) need restocking
+                {stats?.lowStockProducts?.length || 0} product(s) need
+                restocking
               </p>
             </div>
           </div>
@@ -223,70 +224,73 @@ const Dashboard = () => {
                 </tr>
               </thead>
               <tbody>
-                {stats.lowStockProducts.map((product) => (
-                  <tr
-                    key={product._id}
-                    className="border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
-                  >
-                    <td className="py-4 px-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
-                          {product.images?.[0] ? (
-                            <img
-                              src={product.images?.[0]}
-                              alt={product.name}
-                              className="w-full h-full object-cover rounded-lg"
-                            />
-                          ) : (
-                            <svg
-                              className="w-5 h-5 text-gray-400"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={1.5}
-                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                {stats?.lowStockProducts &&
+                  Array.isArray(stats.lowStockProducts) &&
+                  stats.lowStockProducts.map((product) => (
+                    <tr
+                      key={product._id}
+                      className="border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
+                    >
+                      <td className="py-4 px-4">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
+                            {Array.isArray(product.images) &&
+                            product.images.length > 0 ? (
+                              <img
+                                src={product.images[0]}
+                                alt={product.name}
+                                className="w-full h-full object-cover rounded-lg"
                               />
-                            </svg>
-                          )}
+                            ) : (
+                              <svg
+                                className="w-5 h-5 text-gray-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={1.5}
+                                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                                />
+                              </svg>
+                            )}
+                          </div>
+                          <span className="font-medium text-gray-900 dark:text-white">
+                            {product.name}
+                          </span>
                         </div>
-                        <span className="font-medium text-gray-900 dark:text-white">
-                          {product.name}
+                      </td>
+                      <td className="py-4 px-4">
+                        <span
+                          className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold ${
+                            product.stock === 0
+                              ? "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400"
+                              : product.stock <= 5
+                              ? "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400"
+                              : "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400"
+                          }`}
+                        >
+                          {product.stock} units
                         </span>
-                      </div>
-                    </td>
-                    <td className="py-4 px-4">
-                      <span
-                        className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold ${
-                          product.stock === 0
-                            ? "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400"
-                            : product.stock <= 5
-                            ? "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400"
-                            : "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400"
-                        }`}
-                      >
-                        {product.stock} units
-                      </span>
-                    </td>
-                    <td className="py-4 px-4 text-gray-900 dark:text-white font-medium">
-                      {formatPrice(product.price)}
-                    </td>
-                    <td className="py-4 px-4">
-                      {product.stock === 0 ? (
-                        <span className="text-red-600 dark:text-red-400 font-semibold">
-                          Out of Stock
-                        </span>
-                      ) : (
-                        <span className="text-orange-600 dark:text-orange-400 font-semibold">
-                          Low Stock
-                        </span>
-                      )}
-                    </td>
-                  </tr>
-                ))}
+                      </td>
+                      <td className="py-4 px-4 text-gray-900 dark:text-white font-medium">
+                        {formatPrice(product.price)}
+                      </td>
+                      <td className="py-4 px-4">
+                        {product.stock === 0 ? (
+                          <span className="text-red-600 dark:text-red-400 font-semibold">
+                            Out of Stock
+                          </span>
+                        ) : (
+                          <span className="text-orange-600 dark:text-orange-400 font-semibold">
+                            Low Stock
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
               </tbody>
             </table>
           </div>

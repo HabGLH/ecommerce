@@ -169,12 +169,15 @@ const OrdersPage = () => {
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
                         <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                          Order #{order._id.substring(0, 12)}
+                          Order #{order._id?.substring(0, 12) || "..."}
                         </h3>
                         <StatusBadge status={order.status} />
                       </div>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Placed on {formatDate(order.createdAt)}
+                        Placed on{" "}
+                        {order.createdAt
+                          ? formatDate(order.createdAt)
+                          : "Unknown Date"}
                       </p>
                     </div>
 

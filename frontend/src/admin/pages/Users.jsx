@@ -11,7 +11,7 @@ const Users = () => {
   const fetchUsers = async () => {
     try {
       const data = await getUsers();
-      setUsers(data);
+      setUsers(Array.isArray(data) ? data : data.users || []);
     } catch (err) {
       setError("Failed to load users.");
     } finally {
