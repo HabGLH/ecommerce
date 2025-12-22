@@ -978,3 +978,48 @@
 2025-12-19 17:25:41 [INFO]: Incoming Request: GET /api/products?page=1&limit=10 - IP: ::ffff:127.0.0.1
 2025-12-19 17:25:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
 2025-12-19 17:25:42 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:29 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:29 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:29 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:30 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:30 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:30 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:32 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:32 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:34 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:37:38 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
+2025-12-22 18:38:02 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
+2025-12-22 18:38:02 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
+2025-12-22 18:38:02 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
+2025-12-22 18:38:02 [INFO]: Incoming Request: GET /api/cart - IP: ::ffff:127.0.0.1
+2025-12-22 18:38:07 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-22 18:38:08 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-22 18:49:38 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:49:38 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:49:40 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-22 18:49:40 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-22 18:49:40 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:49:40 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:49:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-22 18:49:41 [INFO]: Incoming Request: GET /api/admin/stats - IP: ::ffff:127.0.0.1
+2025-12-22 18:50:37 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
+2025-12-22 18:50:37 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:50:37 [INFO]: Incoming Request: GET /api/products?page=1&limit=8 - IP: ::ffff:127.0.0.1
+2025-12-22 18:50:38 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:50:40 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-22 18:50:40 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-22 18:50:40 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-22 18:51:38 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:51:38 [INFO]: Incoming Request: GET /api/users/me - IP: ::ffff:127.0.0.1
+2025-12-22 18:51:39 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-22 18:51:39 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-22 18:51:39 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-22 18:51:39 [INFO]: Incoming Request: POST /api/auth/refresh - IP: ::ffff:127.0.0.1
+2025-12-22 18:51:39 [ERROR]: 403 - Invalid token - /api/auth/refresh - POST - ::ffff:127.0.0.1
+2025-12-22 18:51:39 [ERROR]: Error: Invalid token
+    at file:///home/habtamu/Documents/Programing/Learn%20With%20Project/Full%20Stack/ecommerce/backend/controllers/authController.js:137:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

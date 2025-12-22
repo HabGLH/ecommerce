@@ -3,7 +3,7 @@ import axiosInstance from "../../api/axiosInstance";
 import Loader from "../../components/Loader";
 import ErrorMessage from "../../components/ErrorMessage";
 import { formatPrice } from "../../utils/formatters";
-import { stats } from "../../api/adminApi";
+// import { stats } from "../../api/adminApi";
 
 // Stat Card Component
 const StatCard = ({ title, value, icon, color, subtitle }) => {
