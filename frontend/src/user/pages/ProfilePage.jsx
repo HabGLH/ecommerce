@@ -51,7 +51,7 @@ const ProfilePage = () => {
   };
 
   const handleCancel = () => {
-    setFormData({ name: profile.name, email: profile.email });
+    setFormData({ name: profile?.name || "", email: profile?.email || "" });
     setIsEditing(false);
     setError(null);
   };
@@ -73,7 +73,7 @@ const ProfilePage = () => {
             {/* Profile Info */}
             <div className="flex items-center space-x-4">
               <div className="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                {profile?.name?.charAt(0).toUpperCase()}
+                {profile?.name?.charAt(0)?.toUpperCase() || "?"}
               </div>
               <div>
                 <h2 className="text-xl font-semibold text-gray-900 dark:text-white">

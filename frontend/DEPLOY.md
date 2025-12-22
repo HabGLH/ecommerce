@@ -1,56 +1,97 @@
-# Deployment Instructions (Vercel)
+# 🚀 Vercel Deployment Guide
 
-This project is ready to be deployed to Vercel.
+This project is optimized for a seamless deployment on **Vercel**. Follow these instructions to ensure your frontend connects correctly to your backend and handles all routes properly.
 
-## Prerequisites
+## 📋 Prerequisites
 
-1.  **Vercel Account**: Sign up at [vercel.com](https://vercel.com).
-2.  **Vercel CLI** (Optional): Install via `npm i -g vercel`.
-3.  **Backend Deployed**: Ensure your backend API is deployed (e.g., on Render, Railway, or Vercel) and you have its URL (e.g., `https://my-api.onrender.com`).
+1.  **Backend Deployed**: Your backend should be live (e.g., on Render or Railway).
+    - In this project, the backend is targeted at: `https://ecommerce-jbs7.onrender.com`
+2.  **Environment Variables**: You will need to configure your backend URL in the Vercel dashboard.
 
-## Deployment Steps
+---
 
-### Option 1: Via Vercel Dashboard (Recommended)
+## 🛠️ Deployment Steps
 
-1.  Push your code to a Git repository (GitHub, GitLab, or Bitbucket).
-2.  Log in to Vercel and click **"Add New..."** -> **"Project"**.
-3.  Import your repository.
-4.  Configure the **Project Settings**:
-    - **Framework Preset**: Vite
-    - **Root Directory**: `frontend` (if your repo root is the parent folder) or leave empty if this repo _is_ the frontend.
-    - **Environment Variables**:
-      - `VITE_API_URL`: The URL of your deployed backend (e.g., `https://my-api.onrender.com/api` or `https://my-api.onrender.com` depending on your backend routes).
-        - _Note_: Our code appends `/auth/refresh`, so if your backend expects `/api/auth/refresh`, set this to `https://.../api`.
-5.  Click **Deploy**.
+### 1. Push to GitHub
 
-### Option 2: Via Vercel CLI
+Ensure your latest changes (including the updated `vercel.json`) are pushed to your repository.
 
-1.  Open your terminal in the `frontend` directory.
-2.  Run:
-    ```bash
-    vercel
-    ```
-3.  Follow the prompts to link the project.
-4.  When asked about settings, accept the defaults (Vite detected).
-5.  To set the environment variable:
-    ```bash
-    vercel env add VITE_API_URL
-    ```
-    (Enter your backend URL when prompted).
-6.  Redeploy with the new env var:
-    ```bash
-    vercel --prod
-    ```
+### 2. Import to Vercel
 
-## Important Note on CORS
+1.  Go to [Vercel Dashboard](https://vercel.com/dashboard).
+2.  Click **"Add New..."** → **"Project"**.
+3.  Import your GitHub repository.
 
-Ensure your backend is configured to accept requests from your Vercel domain. In your backend `app.js` or `cors` configuration:
+### 3. Configure Settings
+
+Vercel should automatically detect **Vite** as the framework. If not, set the following:
+
+- **Framework Preset**: `Vite`
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+
+### 4. Environment Variables (Required)
+
+Add the following variable in the **Environment Variables** section:
+
+| Variable Name  | Value                                     | Description                          |
+| :------------- | :---------------------------------------- | :----------------------------------- |
+| `VITE_API_URL` | `https://ecommerce-jbs7.onrender.com/api` | The base URL for your API endpoints. |
+
+> **⚠️ Important**: Do **not** add a trailing slash to the URL.
+
+### 5. Deploy
+
+Click **Deploy**. Vercel will build your project and provide you with a production URL.
+
+---
+
+## ⚙️ How Routing & API Calls Work
+
+### Single Page Application (SPA) Routing
+
+We have configured `vercel.json` to handle client-side routing. This ensures that refreshing the page on routes like `/cart` or `/orders` doesn't result in a 404 error.
+
+### API Proxying
+
+Even if you forget to set the `VITE_API_URL` environment variable, we have added a fallback rewrite rule in `vercel.json`. This rule proxies all requests starting with `/api` directly to your Render backend:
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://ecommerce-jbs7.onrender.com/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
+
+---
+
+## 🔒 CORS Configuration
+
+Ensure your backend (Render) is configured to allow requests from your Vercel domain. In your backend `app.js` or `cors` middleware:
 
 ```javascript
 app.use(
   cors({
-    origin: ["https://your-frontend.vercel.app", "http://localhost:5173"],
+    origin: ["https://your-app-name.vercel.app", "http://localhost:5173"],
     credentials: true,
   })
 );
 ```
+
+---
+
+## 🐛 Troubleshooting "TypeError: Cannot read properties of undefined"
+
+If you previously saw this error, it was likely due to:
+
+1.  **Missing Environment Variables**: Ensure `VITE_API_URL` is set.
+2.  **Async Data Timing**: We have added defensive checks (`?.` and `Array.isArray`) throughout the codebase to ensure the app doesn't crash while waiting for data from the backend.
+3.  **Vercel Caching**: If the error persists after a fix, try deploying with the **"Redeploy"** button and check **"Delegate to Vercel to fetch the latest code"**.
