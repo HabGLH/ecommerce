@@ -9,7 +9,7 @@ import AppError from "../utils/AppError.js";
 // @route   GET /api/products
 // @access  Public
 export const getAllProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({});
+  const products = await Product.find({ isActive: true });
   res.json(products);
 });
 
