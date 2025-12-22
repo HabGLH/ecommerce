@@ -244,7 +244,7 @@ const Navbar = () => {
                     {user?.name &&
                     typeof user.name === "string" &&
                     user.name.length > 0
-                      ? user.name[0].toUpperCase()
+                      ? user.name.charAt(0).toUpperCase()
                       : "?"}
                   </div>
                   <span
