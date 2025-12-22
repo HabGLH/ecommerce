@@ -9,11 +9,6 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
 
-  console.log(
-    "🧭 Navbar render - user:",
-    user ? { name: user.name, email: user.email } : null
-  );
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -68,7 +63,6 @@ const Navbar = () => {
           setCartCount(count);
         })
         .catch((err) => {
-          console.error("Failed to fetch cart count:", err);
           setCartCount(0);
         });
     } else {

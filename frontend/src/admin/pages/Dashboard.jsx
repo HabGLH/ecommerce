@@ -41,11 +41,9 @@ const Dashboard = () => {
       const data =
         response.data.stats || response.data.data || response.data || {};
 
-      console.log("1. API Raw Response Data:", data);
       setStats(data);
     } catch (err) {
       setError("Failed to load dashboard stats.");
-      console.error("Dashboard Stats Error:", err);
     } finally {
       setLoading(false);
     }
@@ -54,13 +52,6 @@ const Dashboard = () => {
   useEffect(() => {
     fetchStats();
   }, []);
-
-  // Track state updates properly
-  useEffect(() => {
-    if (Object.keys(stats).length > 0) {
-      console.log("2. Dashboard State Updated Successfully:", stats);
-    }
-  }, [stats]);
 
   if (loading) return <Loader />;
   if (error) return <ErrorMessage message={error} />;

@@ -36,7 +36,6 @@ const CartPage = () => {
         setCart({ items: [], totalPrice: 0 });
       } else {
         setError("Failed to load cart.");
-        console.error(err);
       }
     } finally {
       setLoading(false);
@@ -56,7 +55,6 @@ const CartPage = () => {
       await fetchCart();
     } catch (err) {
       alert("Failed to update quantity.");
-      console.error(err);
     } finally {
       setUpdatingItems((prev) => {
         const newSet = new Set(prev);
@@ -73,7 +71,6 @@ const CartPage = () => {
       await fetchCart();
     } catch (err) {
       alert("Failed to remove item.");
-      console.error(err);
       setUpdatingItems((prev) => {
         const newSet = new Set(prev);
         newSet.delete(itemId);

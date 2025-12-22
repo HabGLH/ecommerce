@@ -21,7 +21,6 @@ const ProfilePage = () => {
         setFormData({ name: data.name, email: data.email });
       } catch (err) {
         setError("Failed to load profile.");
-        console.error(err);
       } finally {
         setLoading(false);
       }
@@ -44,7 +43,6 @@ const ProfilePage = () => {
       setError(null);
     } catch (err) {
       setError("Failed to update profile.");
-      console.error(err);
     } finally {
       setUpdating(false);
     }

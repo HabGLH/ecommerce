@@ -65,7 +65,6 @@ const OrdersPage = () => {
       setOrders(sortedOrders);
     } catch (err) {
       setError("Failed to load orders.");
-      console.error(err);
     } finally {
       setLoading(false);
     }

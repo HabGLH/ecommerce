@@ -39,14 +39,6 @@ const AuthProvider = ({ children }) => {
 
         setUser(normalizedUser);
       } catch (error) {
-        // console.log(
-        //   "ℹ️ AuthProvider: No active session (this is normal if not logged in)"
-        // );
-        // console.log(
-        //   "Error details:",
-        //   error.response?.status,
-        //   error.response?.data
-        // );
         // Not logged in - this is fine
         setUser(null);
       } finally {
@@ -113,18 +105,6 @@ const AuthProvider = ({ children }) => {
     isAuthenticated: !!user,
     isAdmin: user?.role === "admin",
   };
-
-  // Debug: Log auth state changes
-  useEffect(() => {
-    console.log("🔐 AuthProvider: State update -", {
-      user: user
-        ? { name: user.name, email: user.email, role: user.role }
-        : null,
-      loading,
-      userType: user ? typeof user : "null",
-      nameType: user?.name ? typeof user.name : "undefined",
-    });
-  }, [user, loading]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
