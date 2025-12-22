@@ -228,9 +228,10 @@ const HomePage = () => {
               >
                 {/* Product Image */}
                 <div className="relative h-56 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 overflow-hidden">
-                  {product.images && product.images?.[0] ? (
+                  {Array.isArray(product.images) &&
+                  product.images.length > 0 ? (
                     <img
-                      src={product.images?.[0]}
+                      src={product.images[0]}
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />

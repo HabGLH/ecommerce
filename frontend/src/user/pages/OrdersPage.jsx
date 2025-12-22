@@ -228,9 +228,10 @@ const OrdersPage = () => {
                             className="flex items-center gap-4 p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg"
                           >
                             <div className="w-16 h-16 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-600 dark:to-gray-700 rounded-lg flex items-center justify-center">
-                              {item.product?.images?.[0] ? (
+                              {Array.isArray(item.product?.images) &&
+                              item.product.images.length > 0 ? (
                                 <img
-                                  src={item.product.images?.[0]}
+                                  src={item.product.images[0]}
                                   alt={item.product.name}
                                   className="w-full h-full object-cover rounded-lg"
                                 />

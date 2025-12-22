@@ -257,7 +257,7 @@ const Navbar = () => {
                     {user?.name &&
                     typeof user.name === "string" &&
                     user.name.trim()
-                      ? user.name.split(" ")[0]
+                      ? user.name.split(" ")?.[0]
                       : "User"}
                   </span>
                   <svg

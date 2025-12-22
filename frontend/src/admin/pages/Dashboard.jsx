@@ -30,26 +30,37 @@ const StatCard = ({ title, value, icon, color, subtitle }) => {
 };
 
 const Dashboard = () => {
-  const [stats, setStats] = useState(null);
+  const [stats, setStats] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const fetchStats = async () => {
     try {
       const response = await axiosInstance.get("/admin/stats");
-      const data = response.data;
+      // Normalize data: check for .stats or .data wrappers
+      const data =
+        response.data.stats || response.data.data || response.data || {};
+
+      console.log("1. API Raw Response Data:", data);
       setStats(data);
-      console.log(stats);
     } catch (err) {
       setError("Failed to load dashboard stats.");
-      console.error(err);
+      console.error("Dashboard Stats Error:", err);
     } finally {
       setLoading(false);
     }
   };
+
   useEffect(() => {
     fetchStats();
   }, []);
+
+  // Track state updates properly
+  useEffect(() => {
+    if (Object.keys(stats).length > 0) {
+      console.log("2. Dashboard State Updated Successfully:", stats);
+    }
+  }, [stats]);
 
   if (loading) return <Loader />;
   if (error) return <ErrorMessage message={error} />;
@@ -57,7 +68,9 @@ const Dashboard = () => {
   const statsCards = [
     {
       title: "Total Revenue",
-      value: formatPrice(stats?.revenue || 0),
+      value: formatPrice(
+        stats?.revenue || stats?.totalRevenue || stats?.total_revenue || 0
+      ),
       subtitle: "All time earnings",
       color: "from-green-500 to-emerald-600",
       icon: (
@@ -78,7 +91,7 @@ const Dashboard = () => {
     },
     {
       title: "Total Users",
-      value: stats?.userCount || 0,
+      value: stats?.userCount || stats?.totalUsers || stats?.users || 0,
       subtitle: "Registered accounts",
       color: "from-blue-500 to-cyan-600",
       icon: (
@@ -99,7 +112,7 @@ const Dashboard = () => {
     },
     {
       title: "Total Orders",
-      value: stats?.orderCount || 0,
+      value: stats?.orderCount || stats?.totalOrders || stats?.orders || 0,
       subtitle: "Completed & pending",
       color: "from-purple-500 to-pink-600",
       icon: (
@@ -120,7 +133,8 @@ const Dashboard = () => {
     },
     {
       title: "Total Products",
-      value: stats?.productCount || 0,
+      value:
+        stats?.productCount || stats?.totalProducts || stats?.products || 0,
       subtitle: "In inventory",
       color: "from-orange-500 to-red-600",
       icon: (
