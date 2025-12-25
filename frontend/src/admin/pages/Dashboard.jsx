@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import axiosInstance from "../../api/axiosInstance";
+import { Link } from "react-router-dom";
+import { getAdminStats } from "../../api/adminApi";
 import Loader from "../../components/Loader";
 import ErrorMessage from "../../components/ErrorMessage";
 import { formatPrice } from "../../utils/formatters";
-// import { stats } from "../../api/adminApi";
 
 // Stat Card Component
 const StatCard = ({ title, value, icon, color, subtitle }) => {
@@ -36,14 +36,12 @@ const Dashboard = () => {
 
   const fetchStats = async () => {
     try {
-      const response = await axiosInstance.get("/admin/stats");
-      // Normalize data: check for .stats or .data wrappers
-      const data =
-        response.data.stats || response.data.data || response.data || {};
-
-      setStats(data);
+      const data = await getAdminStats();
+      setStats(data || {});
     } catch (err) {
-      setError("Failed to load dashboard stats.");
+      setError(
+        "Failed to load dashboard stats. Please check your connection and login status."
+      );
     } finally {
       setLoading(false);
     }
@@ -290,8 +288,8 @@ const Dashboard = () => {
 
       {/* Quick Actions */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <a
-          href="/admin/products"
+        <Link
+          to="/admin/products"
           className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
         >
           <svg
@@ -309,10 +307,10 @@ const Dashboard = () => {
           </svg>
           <h3 className="text-xl font-bold mb-2">Add Product</h3>
           <p className="text-white/80">Create a new product listing</p>
-        </a>
+        </Link>
 
-        <a
-          href="/admin/orders"
+        <Link
+          to="/admin/orders"
           className="bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
         >
           <svg
@@ -330,10 +328,10 @@ const Dashboard = () => {
           </svg>
           <h3 className="text-xl font-bold mb-2">Manage Orders</h3>
           <p className="text-white/80">View and process orders</p>
-        </a>
+        </Link>
 
-        <a
-          href="/admin/users"
+        <Link
+          to="/admin/users"
           className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
         >
           <svg
@@ -351,7 +349,7 @@ const Dashboard = () => {
           </svg>
           <h3 className="text-xl font-bold mb-2">Manage Users</h3>
           <p className="text-white/80">View and moderate users</p>
-        </a>
+        </Link>
       </div>
     </div>
   );

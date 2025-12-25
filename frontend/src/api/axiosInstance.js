@@ -5,6 +5,7 @@ let accessToken = null; // In-memory access token
 
 const axiosInstance = axios.create({
   baseURL: config.API_BASE_URL,
+  withCredentials: true,
 });
 
 // Function to set the access token
