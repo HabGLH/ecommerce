@@ -111,19 +111,19 @@ const Orders = () => {
                 {/* Status Badge */}
                 <span
                   className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                    order.status === "Delivered"
+                    order.orderStatus === "Delivered"
                       ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
-                      : order.status === "Cancelled"
+                      : order.orderStatus === "Cancelled"
                       ? "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400"
                       : "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400"
                   }`}
                 >
-                  {order.status}
+                  {order.orderStatus}
                 </span>
 
                 {/* Status Select */}
                 <select
-                  value={order.status}
+                  value={order.orderStatus}
                   onChange={(e) =>
                     handleStatusChange(order._id, e.target.value)
                   }

@@ -64,7 +64,7 @@ const OrdersPage = () => {
         : [];
       setOrders(sortedOrders);
     } catch (err) {
-      setError("Failed to load orders.");
+      setError(err.message || "Failed to fetch orders.");
     } finally {
       setLoading(false);
     }
@@ -170,7 +170,7 @@ const OrdersPage = () => {
                         <h3 className="text-lg font-bold text-gray-900 dark:text-white">
                           Order #{order._id?.substring(0, 12) || "..."}
                         </h3>
-                        <StatusBadge status={order.status} />
+                        <StatusBadge status={order.orderStatus} />
                       </div>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
                         Placed on{" "}
@@ -274,7 +274,7 @@ const OrdersPage = () => {
 
                   {/* Order Actions */}
                   <div className="flex flex-wrap gap-3 mt-6">
-                    {order.status === "Pending" && (
+                    {order.orderStatus === "Pending" && (
                       <button
                         onClick={() => handleCancelOrder(order._id)}
                         disabled={isCancelling}
@@ -325,8 +325,8 @@ const OrdersPage = () => {
                       </button>
                     )}
 
-                    {(order.status === "Delivered" ||
-                      order.status === "Cancelled") && (
+                    {(order.orderStatus === "Delivered" ||
+                      order.orderStatus === "Cancelled") && (
                       <button
                         onClick={() => navigate("/")}
                         className="px-6 py-2.5 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-all flex items-center gap-2"
@@ -348,7 +348,7 @@ const OrdersPage = () => {
                       </button>
                     )}
 
-                    {order.status === "Shipped" && (
+                    {order.orderStatus === "Shipped" && (
                       <div className="flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 rounded-lg">
                         <svg
                           className="w-5 h-5"
